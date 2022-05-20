@@ -20,7 +20,8 @@ SELECT * FROM products WHERE name LIKE '%MACBOOK%';
 -- find all products that are on sale
 SELECT * FROM products WHERE OnSale= TRUE; 
 -- find the average price of all products 
- SELECT AVG(price) FROM products;  
+ SELECT CONCAT('$', ROUND(AVG(price), 2)) as "Average Price for all products"
+ FROM products;  
 -- find all Geek Squad employees who don't have a middle initial 
  SELECT * from employees
  WHERE title LIKE  '%Geek Squad%' AND middleinitial IS NULL; 

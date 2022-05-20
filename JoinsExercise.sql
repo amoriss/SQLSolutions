@@ -54,3 +54,5 @@ INNER JOIN employees AS e ON e.employeeID = s.employeeID
 INNER JOIN products AS p ON p.productID = s.productID
 GROUP BY e.employeeID, p.productID
 ORDER BY e.FirstName; 
+
+SELECT * FROM bestbuy.products; 
